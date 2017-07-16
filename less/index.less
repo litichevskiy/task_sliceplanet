@@ -1,0 +1,58 @@
+
+@import "default_classes.less";
+@import "reset.less";
+@import "font_face.less";
+@import "/nav_bar/nav_bar.less";
+@import "/nav_bar/nav_bar_for_smal_device.less";
+@import "/nav_bar_small_device/nav_bar_small_device.less";
+@import "/slider/slider.less";
+@import "/slider/slider_for_small_device.less";
+@import "variables.less";
+
+.loaded{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container{
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+    opacity: 0;
+    transition: 0.2s linear opacity;
+}
+
+//// slick dots
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: @color_content_delivery !important;
+    background-color: @color_content_delivery !important;
+    border-radius: 50%;
+}
+
+.slick-dots li button:before {
+    opacity: 0.4;
+}
+
+.slick-dots{
+    bottom: -60px !important;
+}
+
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow{
+    display: none !important;
+}
+
+@media(max-width:920px){
+    .slick-dots{
+        display: none !important;
+    }
+}

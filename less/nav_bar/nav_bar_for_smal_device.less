@@ -1,0 +1,158 @@
+
+@import "../variables.less";
+
+////////// nav bar
+
+@media(max-width:1236px){
+
+    .container_nav_bar{
+        width: 100%;
+    }
+
+    .container_nav_bar .info_company{
+        padding-bottom: 0;
+    }
+
+    .nav_bar.nav_bar_middle_width{
+        display: block;
+        text-align: end;
+
+        .list_user_info_middle_width{
+            display: inline-flex;
+            padding-bottom: 6px;
+
+            .item_list_user_info{
+                margin-left: 7px;
+
+                .img_basket{
+                    position: relative;
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+    .nav_bar{
+        align-items: center;
+
+        .list_user_info{
+            display: none;
+        }
+
+        .list_user_info{
+            font-size: 15px;
+            font-family: PTSansRegular, sans-serif;
+            max-width: 30%;
+            text-align: center;
+
+            .item_list_user_info{
+                margin-left: 5px;
+            }
+        }
+
+        .list_nav_bar{
+            width: 100%;
+            justify-content: space-between;
+
+            .container_logo,
+            .container_search,
+            .container_phone{
+                margin: @margin_none;
+            }
+        }
+
+    }
+
+    .info_company{
+
+        .list_nav_bar{
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media(max-width:1150px){
+
+    .nav_bar{
+
+        .list_nav_bar{
+            .container_search{
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media(max-width:980px){
+
+    .nav_bar{
+
+        .list_nav_bar{
+
+            .container_search{
+                width: 250px;
+            }
+
+            .item_list_nav_bar{
+                margin-right: 0;
+
+                .content_nav_panel{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:920px){
+
+    .container_logo{
+        width: 180px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width:850px){
+
+    .nav_bar{
+
+        .list_nav_bar{
+
+            .name_company{
+                font-size: 12.5px;
+            }
+
+            .item_list_nav_bar{
+
+                .container_phone{
+                    font-size: 15px;
+                }
+
+                .content_nav_panel{
+                    font-size: 16.4px;
+                }
+            }
+
+            .container_search{
+                width: 220px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+
+    .container_nav_bar,
+    .img_block_slider{
+        display: none;
+    }
+
+    .img_block_slider_small_device{
+        display: inline-block;
+    }
+}
